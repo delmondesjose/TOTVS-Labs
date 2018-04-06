@@ -51,4 +51,5 @@ O Valor máximo da nota caiu de 608,91 para 125,62.
 
 Analisando a matriz de correlação observo que as váriaveis BUFFET, REFRIGERANTE, AGUA, CERVEJA e SUCO possuem maior correlação com o valor total, logo essas váriaveis devem fazer parte do modelode regressão.
 
+![correlacao](https://user-images.githubusercontent.com/38118826/38399607-ba2cdaea-3921-11e8-8b7b-78f257e93b3b.PNG)
 
