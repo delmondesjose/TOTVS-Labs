@@ -48,3 +48,7 @@ Obtenho os outliers através da função *boxplot.stats* utilizando o parâmetro
 O Valor máximo da nota caiu de 608,91 para 125,62.
 
 ## 3- Analise de Correlação
+
+Analisando a matriz de correlação observo que as váriaveis BUFFET, REFRIGERANTE, AGUA, CERVEJA e SUCO possuem maior correlação com o valor total, logo essas váriaveis devem fazer parte do modelode regressão.
+
+
