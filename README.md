@@ -43,3 +43,8 @@ Analizando o resultado da função *summary* e o *boxplot* do valor total das no
 
 Obtenho os outliers através da função *boxplot.stats* utilizando o parâmetro  *coef=1* para manter os outliers mais próximos ao terceiro quartil. Após a remoção dos outliers temos o seguinte boxplot:
 
+![boxplot_2](https://user-images.githubusercontent.com/38118826/38399003-05f24450-391e-11e8-9424-c1db7e9b34d3.PNG)
+
+O Valor máximo da nota caiu de 608,91 para 125,62.
+
+## 3- Analise de Correlação
