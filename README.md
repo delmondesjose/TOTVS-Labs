@@ -37,5 +37,9 @@ Através das funções  *import_df* e *convert_df*, importo os dados do arquivo 
    
 ## 2- Limpeza dos dados
 
+Analizando o resultado da função *summary* e o *boxplot* do valor total das notas, podemos observar a existência de alguns *outliers*, notas com  o valor muito acima da média.
 
+![boxplot_1](https://user-images.githubusercontent.com/38118826/38398808-aa135b2a-391c-11e8-86c3-540a378d2fb9.PNG)
+
+Obtenho os outliers através da função *boxplot.stats* utilizando o parâmetro  *coef=1* para manter os outliers mais próximos ao terceiro quartil. Após a remoção dos outliers temos o seguinte boxplot:
 
