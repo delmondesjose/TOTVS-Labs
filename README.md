@@ -34,3 +34,8 @@ Através das funções  *import_df* e *convert_df*, importo os dados do arquivo 
    * **DOCINHOS**: quantidade de docinhos consumida pelo cliente;
    * **BACARDI**: quantidade de bacardi consumida pelo cliente;
    * **VINHO**: quantidade de vinho consumida pelo cliente;
+   
+## 2- Limpeza dos dados
+
+
+
