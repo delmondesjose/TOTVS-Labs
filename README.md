@@ -14,26 +14,26 @@ Através das funções  *import_df* e *convert_df*, importo os dados do arquivo 
    * **TOTAL**: Valor total da nota;
    * **DIA**: Dia em que a nota foi emitida;
    * **AGUA**: Quantidade de água consumida pelo cliente;
-   * **BUFFET**: Quantidade de buffet consumido pelo cliente;
-   * **SUCO**: Quantidade de suco consumido pelo cliente;
-   * **CHA**: Quantidade de chá consumido pelo cliente;
-   * **CAFE EXPRESSO**: Quantidade de café expresso consumido pelo cliente;
-   * **TEMAKI**: Quantidade de temaki consumido pelo cliente;
+   * **BUFFET**: Quantidade de buffet consumida pelo cliente;
+   * **SUCO**: Quantidade de suco consumida pelo cliente;
+   * **CHA**: Quantidade de chá consumida pelo cliente;
+   * **CAFE EXPRESSO**: Quantidade de café expresso consumida pelo cliente;
+   * **TEMAKI**: Quantidade de temaki consumida pelo cliente;
    * **SAKE**: Quantidade de sake consumida pelo cliente;
-   * **WHISKY**: Quantidade de whisky consumido pelo cliente;
-   * **SUSHI ESPECIAL**: Quantidade de sushi especial consumido pelo cliente;
-   * **SASHIMI**: Quantidade de sashimi consumido pelo cliente;
+   * **WHISKY**: Quantidade de whisky consumida pelo cliente;
+   * **SUSHI ESPECIAL**: Quantidade de sushi especial consumida pelo cliente;
+   * **SASHIMI**: Quantidade de sashimi consumida pelo cliente;
    * **CERVEJA**: Quantidade de cerveja consumida pelo cliente;
-   * **YAKISSOBA**: Quantidade de yakissoba consumido pelo cliente;
+   * **YAKISSOBA**: Quantidade de yakissoba consumida pelo cliente;
    * **SOBREMESA**: Quantidade de sobremesa consumida pelo cliente;
-   * **HARUMAKI**: Quantidade de harumaki consumido pelo cliente;
+   * **HARUMAKI**: Quantidade de harumaki consumida pelo cliente;
    * **CAIPIRINHA**: Quantidade de caipirinha consumida pelo cliente;
    * **CAIPIROSKA**: Quantidade de caipiroska consumida pelo cliente;
-   * **URAMAKI**: Quantidade de uramaki consumido pelo cliente;
-   * **REFRIGERANTE**: Quantidade de refrigerante consumido pelo cliente;
-   * **DOCINHOS**: Quantidade de docinhos consumidos pelo cliente;
-   * **BACARDI**: Quantidade de bacardi consumido pelo cliente;
-   * **VINHO**: Quantidade de vinho consumido pelo cliente;
+   * **URAMAKI**: Quantidade de uramaki consumida pelo cliente;
+   * **REFRIGERANTE**: Quantidade de refrigerante consumida pelo cliente;
+   * **DOCINHOS**: Quantidade de docinhos consumida pelo cliente;
+   * **BACARDI**: Quantidade de bacardi consumida pelo cliente;
+   * **VINHO**: Quantidade de vinho consumida pelo cliente;
    
 ## 2- Limpeza dos dados
 
@@ -49,7 +49,7 @@ O Valor máximo da nota caiu de 608,91 para 125,62.
 
 ## 3- Análise de Correlação
 
-Analisando a matriz de correlação observo que as váriaveis BUFFET, REFRIGERANTE, AGUA, CERVEJA e SUCO possuem maior correlação com o valor total, logo essas váriaveis devem fazer parte do modelode regressão.
+Analisando a matriz de correlação observo que as váriaveis BUFFET, REFRIGERANTE, AGUA, CERVEJA e SUCO possuem maior correlação com o valor total, logo essas váriaveis devem fazer parte do modelo de regressão.
 
 ![correlacao](https://user-images.githubusercontent.com/38118826/38399607-ba2cdaea-3921-11e8-8b7b-78f257e93b3b.PNG)
 
@@ -57,7 +57,7 @@ Analisando a matriz de correlação observo que as váriaveis BUFFET, REFRIGERAN
 
 Inicialmente utilizo a função lm para a criação do modelo de regressão linear, tendo como parâmetros as variáveis com maior grau de correlação.
 
-Utilizo a função summary para validar se o modelo necessita de algum ajuste. Verifico através do valor-P, utilizando 90% de confiança, que nenhuma das váriaveis deve ser removida do modelo. Através do R-Quadrado, verifico que 96% da variabilidade do valor das notas é explicado pelas váriaveis escolhidas para a modelagem. Logo o modelo não necessita de ajuste.
+Utilizo a função summary para validar se o modelo necessita de algum ajuste. Verifico através do valor-P, utilizando 90% de confiança, que nenhuma das váriaveis deve ser removida do modelo. Através do R-Quadrado, verifico que 96% da variabilidade do valor das notas é explicada pelas váriaveis escolhidas para a modelagem. Logo o modelo não necessita de ajuste.
 
 Em seguida realizo a validação cruzada, com dez folders, e utilizo a raiz do erro quadratico médio (RMSE) como medida de acurácia para validação do modelo. O resultado obtido pela validação cruzada foi um RMSE médio de 4.8. 
 
@@ -77,15 +77,15 @@ Utilizo os gráficos de autocorrelação e autocorrelação parcial da série pa
 
 Como existe mais de uma autocorrelação diferente de zero e apenas uma autocorrelação parcial diferento de zero, utilizo o modelo auto regressivo de ordem 1.
 
-Realizo os testes de hipotese sobre os parâmetros do modelos, para verificar se algum parâmetro deve ser removido. O teste é realizado dividindo o parâmetro estimado pelo seu desvio padrão, considerando 90% de confiança. 
+Realizo os testes de hipótese sobre os parâmetros do modelo, para verificar se algum parâmetro deve ser removido. O teste é realizado dividindo o parâmetro estimado pelo seu desvio padrão, considerando 90% de confiança. 
 
-Analiso os graficos de autocorrelação e autocorrelação parcial dos residuos para verificar se o modelo precisa de algum ajuste.
+Analiso os graficos de autocorrelação e autocorrelação parcial dos resíduos para verificar se o modelo precisa de algum ajuste.
 
 ![acf2](https://user-images.githubusercontent.com/38118826/38460971-a5ea59ce-3a9b-11e8-80b8-843044ee347f.PNG)
 
 Como todas as autocorrelações e todas as autocorrelações parciais são iguais a zero, concluo que o modelo esta adequado.
 
-Utilizo a dunção *forecast* para realizar a projeção dos próximos seis dias. O quadro a seguir motra a projeção de vendas para os próximos seis dias com intervalos de 80 e 95% de confiança.
+Utilizo a dunção *forecast* para realizar a projeção dos próximos seis dias. O quadro a seguir mostra a projeção de vendas para os próximos seis dias com intervalos de 80 e 95% de confiança.
 
 ![forecast](https://user-images.githubusercontent.com/38118826/38461047-fdca7826-3a9c-11e8-80c3-0137b8d923ef.PNG)
 
