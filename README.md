@@ -66,3 +66,7 @@ Concluo que uma possível equação que prevê o quanto um cliente irá gastar, 
 ## 5- Análise de série Temporal
 
 Incialmente transformo o data frame novamente, agrupando os valores das notas por dia, e utilizao a função ts para obter uma série temporal com os valores de vendas diárias.
+
+![serie](https://user-images.githubusercontent.com/38118826/38460707-b1f42f8e-3a95-11e8-8dda-d3b201568bc2.PNG)
+
+
