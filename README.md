@@ -71,8 +71,16 @@ Incialmente transformo o data frame, agrupando os valores das notas por dia, e u
 
 Utilizo a função *adf.test* para verificar se a série é estacionária. como o *p-value* é igual 0.01, considerando 90% de confiança, concluo que a série é estacionária.
 
-Utilizo os gráficos de correlação e correlação parcial da série para identificar o modelo a ser utilizado.
+Utilizo os gráficos de autocorrelação e autocorrelação parcial da série para identificar o modelo a ser utilizado.
 
 ![acf1](https://user-images.githubusercontent.com/38118826/38460872-2ba352e4-3a99-11e8-9370-9e02d3dac6a6.PNG)
+
+Como existe mais de uma autocorrelação diferente de zero e apenas uma autocorrelação parcial diferento de zero, utilizo o modelo auto regressivo de ordem 1.
+
+Realizo os testes de hipotese sobre os parâmetros do modelos, para verificar se algum parâmetro deve ser removido. 
+
+Analiso os graficos de autocorrelação e autocorrelação parcial dos residuos para verificar se o modelo precisa de algum ajuste.
+
+
 
 
