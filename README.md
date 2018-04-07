@@ -87,7 +87,6 @@ Como todas as autocorrelações e todas as autocorrelações parciais são iguai
 
 Utilizo a dunção *forecast* para realizar a projeção dos próximos seis dias. O quadro a seguir motra a projeção de vendas para os próximos seis dias com intervalos de 80 e 95% de confiança.
 
+![forecast](https://user-images.githubusercontent.com/38118826/38461047-fdca7826-3a9c-11e8-80c3-0137b8d923ef.PNG)
 
-
-
-
+A projeção de vendas para a próxima semana é 32.708,16.
