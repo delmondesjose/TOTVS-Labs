@@ -65,8 +65,13 @@ Concluo que uma possível equação que prevê o quanto um cliente irá gastar, 
 
 ## 5- Análise de série Temporal
 
-Incialmente transformo o data frame novamente, agrupando os valores das notas por dia, e utilizao a função ts para obter uma série temporal com os valores de vendas diárias.
+Incialmente transformo o data frame, agrupando os valores das notas por dia, e utilizo a função *ts* para obter uma série temporal com os valores de vendas diárias.
 
 ![serie](https://user-images.githubusercontent.com/38118826/38460707-b1f42f8e-3a95-11e8-8dda-d3b201568bc2.PNG)
+
+Utilizo a função *adf.test* para verificar se a série é estacionária. como o *p-value* é igual 0.01, considerando 90% de confiança, concluo que a série é estacionária.
+
+Utilizo os gráficos de correlação e correlação parcial da série para identificar o modelo a ser utilizado.
+
 
 
