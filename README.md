@@ -11,29 +11,29 @@ A seguir descrevo os passos que segui para resolução do desafio:
 
 Através das funções  *import_df* e *convert_df*, importo os dados do arquivo json e crio um data frame com as seguintes colunas:
    
-   * **TOTAL**: valor total da nota;
-   * **DIA**: dia em que a nota foi emitida;
-   * **AGUA**: quantidade de água consumida pelo cliente;
-   * **BUFFET**: quantidade de buffet consumida pelo cliente;
-   * **SUCO**: quantidade de suco consumida pelo cliente;
-   * **CHA**: quantidade de chá consumida pelo cliente;
-   * **CAFE EXPRESSO**: quantidade de café expresso consumida pelo cliente;
-   * **TEMAKI**: quantidade de temaki consumida pelo cliente;
-   * **SAKE**: quantidade de sake consumida pelo cliente;
-   * **WHISKY**: quantidade de whisky consumida pelo cliente;
-   * **SUSHI ESPECIAL**: quantidade de sushi especial consumida pelo cliente;
-   * **SASHIMI**: quantidade de sashimi consumida pelo cliente;
-   * **CERVEJA**: quantidade de cerveja consumida pelo cliente;
-   * **YAKISSOBA**: quantidade de yakissoba consumida pelo cliente;
-   * **SOBREMESA**: quantidade de sobremesa consumida pelo cliente;
-   * **HARUMAKI**: quantidade de harumaki consumida pelo cliente;
-   * **CAIPIRINHA**: quantidade de caipirinha consumida pelo cliente;
-   * **CAIPIROSKA**: quantidade de caipiroska consumida pelo cliente;
-   * **URAMAKI**: quantidade de uramaki consumida pelo cliente;
-   * **REFRIGERANTE**: quantidade de refrigerante consumida pelo cliente;
-   * **DOCINHOS**: quantidade de docinhos consumida pelo cliente;
-   * **BACARDI**: quantidade de bacardi consumida pelo cliente;
-   * **VINHO**: quantidade de vinho consumida pelo cliente;
+   * **TOTAL**: Valor total da nota;
+   * **DIA**: Dia em que a nota foi emitida;
+   * **AGUA**: Quantidade de água consumida pelo cliente;
+   * **BUFFET**: Quantidade de buffet consumido pelo cliente;
+   * **SUCO**: Quantidade de suco consumido pelo cliente;
+   * **CHA**: Quantidade de chá consumido pelo cliente;
+   * **CAFE EXPRESSO**: Quantidade de café expresso consumido pelo cliente;
+   * **TEMAKI**: Quantidade de temaki consumido pelo cliente;
+   * **SAKE**: Quantidade de sake consumida pelo cliente;
+   * **WHISKY**: Quantidade de whisky consumido pelo cliente;
+   * **SUSHI ESPECIAL**: Quantidade de sushi especial consumido pelo cliente;
+   * **SASHIMI**: Quantidade de sashimi consumido pelo cliente;
+   * **CERVEJA**: Quantidade de cerveja consumida pelo cliente;
+   * **YAKISSOBA**: Quantidade de yakissoba consumido pelo cliente;
+   * **SOBREMESA**: Quantidade de sobremesa consumida pelo cliente;
+   * **HARUMAKI**: Quantidade de harumaki consumido pelo cliente;
+   * **CAIPIRINHA**: Quantidade de caipirinha consumida pelo cliente;
+   * **CAIPIROSKA**: Quantidade de caipiroska consumida pelo cliente;
+   * **URAMAKI**: Quantidade de uramaki consumido pelo cliente;
+   * **REFRIGERANTE**: Quantidade de refrigerante consumido pelo cliente;
+   * **DOCINHOS**: Quantidade de docinhos consumidos pelo cliente;
+   * **BACARDI**: Quantidade de bacardi consumido pelo cliente;
+   * **VINHO**: Quantidade de vinho consumido pelo cliente;
    
 ## 2- Limpeza dos dados
 
