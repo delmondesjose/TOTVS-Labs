@@ -7,7 +7,7 @@ https://github.com/TOTVS/MDMStatic/tree/master/code-challenge
 
 A seguir descrevo os passos que segui para resolução do desafio:
 
-## 1- importação e conversão dos dados
+## 1- Importação e conversão dos dados
 
 Através das funções  *import_df* e *convert_df*, importo os dados do arquivo json e crio um data frame com as seguintes colunas:
    
@@ -47,7 +47,7 @@ Obtenho os outliers através da função *boxplot.stats* utilizando o parâmetro
 
 O Valor máximo da nota caiu de 608,91 para 125,62.
 
-## 3- Analise de Correlação
+## 3- Análise de Correlação
 
 Analisando a matriz de correlação observo que as váriaveis BUFFET, REFRIGERANTE, AGUA, CERVEJA e SUCO possuem maior correlação com o valor total, logo essas váriaveis devem fazer parte do modelode regressão.
 
