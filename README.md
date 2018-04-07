@@ -73,5 +73,6 @@ Utilizo a função *adf.test* para verificar se a série é estacionária. como 
 
 Utilizo os gráficos de correlação e correlação parcial da série para identificar o modelo a ser utilizado.
 
+![acf1](https://user-images.githubusercontent.com/38118826/38460872-2ba352e4-3a99-11e8-9370-9e02d3dac6a6.PNG)
 
 
