@@ -67,7 +67,7 @@ Concluo que uma possível equação que prevê o quanto um cliente irá gastar, 
 
 Incialmente transformo o data frame, agrupando os valores das notas por dia, e utilizo a função *ts* para obter uma série temporal com os valores de vendas diárias.
 
-![serie](https://user-images.githubusercontent.com/38118826/38460707-b1f42f8e-3a95-11e8-8dda-d3b201568bc2.PNG)
+![serie](https://user-images.githubusercontent.com/38118826/38460829-60a05894-3a98-11e8-9c8a-0f9c31e54696.png)
 
 Utilizo a função *adf.test* para verificar se a série é estacionária. como o *p-value* é igual 0.01, considerando 90% de confiança, concluo que a série é estacionária.
 
