@@ -59,6 +59,6 @@ Inicialmente utilizo a função lm para a criação do modelo de regressão line
 
 Utilizo a função summary para validar se o modelo necessita de algum ajuste. Verifico através do valor-P, utilizando 90% de confiança, que nenhuma das váriaveis deve ser removida do modelo. Através do R-Quadrado, verifico que 96% da variabilidade do valor das notas é explicado pelas váriaveis escolhidas para a modelagem. Logo o modelo não necessita de ajuste.
 
-Em seguida realizo a validação cruzada, com dez folders, e utilizo a raiz do erro quadratico médio como medida de acurácia para validação do modelo. O resultado obtido pela validação cruzada foi um erro quatratico médio de 4.8. 
+Em seguida realizo a validação cruzada, com dez folders, e utilizo a raiz do erro quadratico médio (RMSE) como medida de acurácia para validação do modelo. O resultado obtido pela validação cruzada foi um RMSE médio de 4.8. 
 
 Concluo que uma possível equação que prevê o quanto um cliente irá gastar, em função das quantidades consumidades de buffet, refrigerante, água, cerveja e suco é dada por: 0.52 + 69.89 * BUFFET + 4.51 * REFRIGERANTE + 3.33 * AGUA + 7 * CERVEJA + 5.08 * SUCO.
