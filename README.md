@@ -53,3 +53,7 @@ Analisando a matriz de correlação observo que as váriaveis BUFFET, REFRIGERAN
 
 ![correlacao](https://user-images.githubusercontent.com/38118826/38399607-ba2cdaea-3921-11e8-8b7b-78f257e93b3b.PNG)
 
+## 4- Análise de regressão linear múltipla
+
+Inicialmente utilizo a função lm para a criação do modelo de regressão linear, tendo com parâmetros as variáveis com maior grau de correlação.
+Utilizo a função summary para validar se o modelo necessita de algum ajuste. Verifico através do valor-P, utilizando 90% de confiança, que nenhuma das váriaveis deve ser removida do modelo. Através do R-Quadrado, verifico que 96% da variabilidade do valor das notas é explicado pelas váriaveis escolhidas para a modelagem. Logo o modelo não necessota de ajuste
