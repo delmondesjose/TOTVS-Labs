@@ -79,11 +79,11 @@ Como existe mais de uma autocorrelação diferente de zero e apenas uma autocorr
 
 Realizo os testes de hipótese sobre os parâmetros do modelo, para verificar se algum parâmetro deve ser removido. O teste é realizado dividindo o parâmetro estimado pelo seu desvio padrão, considerando 90% de confiança. 
 
-Analiso os graficos de autocorrelação e autocorrelação parcial dos resíduos para verificar se o modelo precisa de algum ajuste.
+Analiso os gráficos de autocorrelação e autocorrelação parcial dos resíduos para verificar se o modelo precisa de algum ajuste.
 
 ![acf2](https://user-images.githubusercontent.com/38118826/38460971-a5ea59ce-3a9b-11e8-80b8-843044ee347f.PNG)
 
-Como todas as autocorrelações e todas as autocorrelações parciais são iguais a zero, concluo que o modelo esta adequado.
+Como todas as autocorrelações e todas as autocorrelações parciais são iguais a zero, concluo que o modelo está adequado.
 
 Utilizo a dunção *forecast* para realizar a projeção dos próximos seis dias. O quadro a seguir mostra a projeção de vendas para os próximos seis dias com intervalos de 80 e 95% de confiança.
 
